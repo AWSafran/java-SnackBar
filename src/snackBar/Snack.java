@@ -60,7 +60,7 @@ public class Snack
 
 	public int getMachineId()
 	{
-		return machineId
+		return machineId;
 	}
 
 	public int getQuantity()
@@ -77,7 +77,7 @@ public class Snack
 
 	public void buySnack(int purchasedAmount)
 	{
-		quantity -+ purchasedAmount;
+		quantity -= purchasedAmount;
 	}
 
 	public double getTotalCost(int quantityPurchased)

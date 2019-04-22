@@ -12,12 +12,12 @@ public class Main
 		Machine office = new Machine("Office");
 
 		//public Snack(String name, int quantity, double cost, int machineId)
-		Snack chips = new Snack("Chips", 36, 1.75, food.getId());
-		Snack chocolateBar = new Snack("Chocolate Bar", 36, 1.00, food.getId());
-		Snack pretzel = new Snack("Pretzel", 30, 2.00, food.getId());
+		Snack chips = new Snack("Chips", 36, 1.75, food.getId(), food.getName());
+		Snack chocolateBar = new Snack("Chocolate Bar", 36, 1.00, food.getId(), food.getName());
+		Snack pretzel = new Snack("Pretzel", 30, 2.00, food.getId(), food.getName());
 
-		Snack soda = new Snack("Soda", 24, 2.50, drink.getId());
-		Snack water = new Snack("Water", 20, 2.75, drink.getId());
+		Snack soda = new Snack("Soda", 24, 2.50, drink.getId(), drink.getName());
+		Snack water = new Snack("Water", 20, 2.75, drink.getId(), drink.getName());
 
 		System.out.println("Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.");
 		jane.spendCash(soda.getTotalCost(3));

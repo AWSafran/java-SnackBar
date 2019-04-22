@@ -8,15 +8,17 @@ public class Snack
 	private int quantity;
 	private double cost;
 	private int machineId;
+	private String machineName;
 
-	public Snack(String name, int quantity, double cost, int machineId)
+	public Snack(String name, int quantity, double cost, int machineId, String machineName)
 	{
 		maxId ++;
 		id = maxId;
 		this.name = name;
 		this.quantity = quantity;
 		this.cost = cost;
-		this.machineId = machineId;	
+		this.machineId = machineId;
+		this.machineName = machineName;
 	}
 
 	//setters
@@ -89,7 +91,7 @@ public class Snack
 	public String toString()
 	{
 		String output = "Name: " + name + "\n" +
-						"Machine ID: " + machineId + "\n" +
+						"Machine: " + machineName + "\n" +
 						"Quantity on hand: " + quantity + "\n" +
 						"Total cost of all quantity: $" + getTotalCost(quantity) + "\n";
 
